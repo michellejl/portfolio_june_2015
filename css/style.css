@@ -1,0 +1,445 @@
+
+body {
+    background: #1a2a33;
+}
+/* ********** *
+ * TYPOGRAPHY *
+ * ********** */
+* {
+    font-family: 'Comfortaa', sans-serif;
+}
+span.hand {
+    font-family: 'Indie Flower', cursive;
+}
+h1, h2 {
+    color: #dadada;
+}
+a {
+    color: #5171a4;
+    text-decoration: none;
+}
+
+form label{
+    font-size:16px;
+}
+a:hover, a:active {
+    color: #6f9254;
+    text-decoration: underline;
+}
+footer p {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 11px;
+}
+footer a, footer a:hover, footer a:active {
+    color: #ffffff;
+}
+    /* *********** *
+     * CONNECTIONS *
+     * *********** */
+    ul.connect {
+        font-size: 16pt;
+        text-align: center;
+    }
+    ul.connect i {
+        font-size: 30pt;
+        line-height: 40pt;
+    }
+    ul.connect li a {
+        color: #000000;
+    }
+    ul.connect li a:hover, ul.connect li a:active {
+        color: #5171a4;
+    }
+
+/* ************** *
+ * NAVIGATION BAR *
+ * ************** */
+.sub-nav li a {
+    font-size: 14pt;
+}
+.sub-nav li {
+    margin-top: 10px;
+}
+.sub-nav li a:hover {
+    color: #ffffff;
+}
+.sub-nav img {
+    max-height: 50px;
+    margin-top: -10px;
+}
+nav.bar {
+    background: #606060;
+}
+.sub-nav li.active a {
+    background: #5171a4;
+}
+
+
+/* ******* *
+ * ID CARD *
+ * ******* */
+div#card {
+    background: #ffffff;
+    border-radius: 8px;
+}
+div#card p {
+    font-size: 13pt;
+    margin-bottom: 15px;
+}
+div#card a {
+    color: #000000;
+}
+div#card h2 {
+    color: #8c1111;
+    padding-top: 300px;
+}
+div#panelException {
+    margin-bottom: 0;
+    padding-bottom: 90px;
+}
+img#meDrawing, img#circle {
+    position: absolute;
+    left: 0;
+}
+
+
+/* ************* *
+ * SECTION SIGNS *
+ * ************* */
+.header-panel {
+    margin: 4rem auto;
+    border:solid #5171a4;
+    border-width: 10px 0 5px 0;
+    border-radius: 8px;
+    background: #FAFAFA;
+    padding: 1rem 2rem 2rem 2rem;
+}
+.header-panel p {
+    text-align: justify;
+    margin-top: -3rem;
+}
+.header-panel .sign {
+    background: #FAFAFA;
+    width: 250px;
+    height: 5.4rem;
+    border-radius: 8px;
+    position: relative;
+    top: -2.5rem;
+    margin: auto;
+}
+.header-panel .sign h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #666;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+/* ******** *
+ * PARALLAX *
+ * ******** */
+.parallaxContainer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+section.module:last-child {
+    margin-bottom: 0;
+}
+section.module p:last-child {
+    margin-bottom: 0;
+}
+section.module.content {
+    padding: 40px 0;
+}
+section.module.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.module.aboutParallax,
+section.module.portfolioParallax,
+section.module.contactParallax,
+section.module.webParallax,
+section.module.brandingParallax {
+    background-color: #5171a4;
+}
+
+section.module.aboutParallax {
+    background-image: url("../img/parallax-bgs/aboutBG.jpg");
+}
+section.module.portfolioParallax {
+    background-image: url("../img/parallax-bgs/portfolioBG.jpg");
+}
+section.module.contactParallax {
+    background-image: url("../img/parallax-bgs/contactBG.jpg");
+}
+section.module.webParallax {
+    background-image: url("../img/parallax-bgs/webProjectsBG.jpg")
+}
+section.module.brandingParallax {
+    background-image: url("../img/parallax-bgs/brandingProjectsBG.jpg")
+}
+section.module.parallax h1, section.module.parallax h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@media all and (min-width: 600px) {
+    section.module.parallax h2 {
+        margin-top: -225px;
+        font-size: 70px;
+    }
+    section.module p {
+        font-size: 20px;
+    }
+    section.module.parallax h1 {
+        line-height: 525px;
+        font-size: 96px;
+    }
+}
+@media all and (min-width: 960px) {
+    section.module.parallax h1 {
+        font-size: 160px;
+    }
+}
+
+/* ****************** *
+ * IMAGE OVERLAY TEXT *
+ * ****************** */
+div.wrapper{
+    position:relative;
+}
+div.description{
+    position:absolute;
+    bottom:0;
+    left:0;
+    display:none;
+    background-color:black;
+    color:white;
+}
+div.descriptionContent p{
+    margin-top:3px;
+}
+
+/* ***** *
+ * FORMS *
+ * ***** */
+.mainForm textarea {
+    height: 200px;
+}
+.mainForm input:focus:invalid, .mainForm textarea:focus:invalid {
+    background: #fff url("../img/invalid.png") no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+.mainForm input:required:valid, .mainForm textarea:required:valid {
+    background: #fff url("../img/valid.png") no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+/* ******* *
+ * BUTTONS *
+ * ******* */
+.outline {
+    background-color: #ffffff;
+    border: solid 4px #6f9254;
+    border-radius: 8px;
+    color: #6f9254;
+    font-size: 18pt;
+    padding: 10px 20px;
+}
+.outline:hover {
+    background-color: #ffffff;
+    border-color: #5171a4;
+    color: #5171a4;
+    text-decoration: none;
+}
+/* ***** *
+ * OTHER *
+ * ***** */
+img#resume,
+img#resumeText,
+img#camera,
+img#socialText,
+img#instagramSocial,
+img#linkedinSocial {
+    position: relative;
+}
+
+img#resume {
+    margin-left: 50px;
+    margin-top: 250px;
+    z-index: 5;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    max-width: 175px;
+}
+img#resumeText {
+    margin-left: -70px;
+    margin-top: -250px;
+}
+img#camera {
+    margin-top: -125px;
+}
+img#socialText {
+    margin-top: 350px;
+}
+img#instagramSocial, img#linkedinSocial {
+    margin-top: -150px;
+    margin-left: 20px
+}
+
+
+/* ****** *
+ * FOOTER *
+ * ****** */
+footer {
+    background: #000000;
+}
+
+/* ******************** *
+ * SIGN LINES ANIMATION *
+ * ******************** */
+
+.sign{
+    transform: translate3d(0,-50%,0) translate(0);
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0,-50%,0) translate(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-text-stroke: 1px rgba(120,119,114,.1);
+    font-family: 'Brandon Grotesque',sans-serif;
+    font-weight: 300;
+    font-size: 5em;
+    position: relative;
+
+    color: #0D091B;
+    line-height: 1em;
+    padding: 25px;
+    width: 250px;
+
+    margin: auto;
+}
+
+.sign{
+    border: 1px solid transparent;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+.sign:hover{
+    font-weight: 700;
+}
+
+.sign .line{
+    -webkit-transition-duration: .45s;
+    -webkit-transition-property: top,right,bottom,left,width,height;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-timing-function: 'ease-in-out';
+    transition-duration: .45s;
+    transition-property: top,right,bottom,left,width,height;
+    transition-delay: 0s;
+    transition-timing-function: 'ease-in-out';
+    display: block;
+    position: absolute;
+    background: #0D091B;
+}
+
+.sign .line.top{
+    left: 1%;
+    top: 1%;
+    width: 0;
+    height: .01em;
+    background: #8F8F8F;
+}
+
+.sign:hover .line.top{
+    background: #5171a4;
+    width: 98%;
+    height: .125em;
+}
+
+.sign .line.right{
+    right: 1%;
+    top: 1%;
+    width: .01em;
+    height: 0;
+    background: #8F8F8F;
+}
+
+.sign:hover .line.right{
+    background: #5171a4;
+    height: 98%;
+    width: .125em;
+}
+
+.sign .line.bottom{
+    right: 1%;
+    bottom: 1%;
+    width: 0;
+    height: .01em;
+    background: #8F8F8F;
+}
+
+.sign:hover .line.bottom{
+    background: #5171a4;
+    width: 98%;
+    height: .125em;
+}
+
+.sign .line.left{
+    left: 1%;
+    bottom: 1%;
+    width: .01em;
+    height: 0;
+    background: #8F8F8F;
+}
+
+.sign:hover .line.left{
+    background: #5171a4;
+    height: 98%;
+    width: .125em;
+}
+
+
+/* PORTFOLIO SLIDER STYLES */
+.portDescription strong{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.portImage {
+    margin-top: 4rem;
+}
+.slick-next {
+    float: right;
+}
+.slick-prev {
+    float: left;
+}
+.slick-next,
+.slick-prev,
+.slick-next:active,
+.slick-prev:active,
+.slick-next:visited,
+.slick-prev:visited,
+.slick-next:focus,
+.slick-prev:focus {
+    margin-top: -40px;
+    border-radius: 3px;
+    background: transparent;
+}
+.slick-next:hover,
+.slick-prev:hover {
+    background: transparent;
+    color: #5171a4;
+}
+.slide p {
+    font-size: 11pt !important;
+}
